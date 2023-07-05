@@ -1,0 +1,34 @@
+/* .maintrending {
+    position: relative;
+}
+
+.banner-content{
+    position: absolute;
+    top: 130%;
+    padding-left: 16px;
+    width: 70%;
+} */
+
+
+.searchmovies{
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+@media  screen and (max-width:837px) {
+    .imagecont{
+        width: 206px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .imagecont{
+        width:175px;
+    }
+
+    /* .similarcont{
+        width: 150px;
+    } */
+
+}

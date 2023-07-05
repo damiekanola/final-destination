@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <script src="/js/global.js"></script> -->
+</head>
+
+<body class="bg-slate-50">
+    <nav class="bg-gray-800 w-full h-16 static ">
+        <div class="flex justify-between w-11/12 m-auto">
+            <div>
+                <div class="mt-2 w-fit h-fit">
+                    <img src="/logo small.png" alt="" width="270" height="48" />
+                </div>
+            </div>
+            <!-- <div class="flex w-60 justify-between h-fit">
+                <div class="mt-4 w-fit h-fit">
+                    <input type="text" placeholder="Search any movies..." id="search"
+                        class="rounded-xl bg-gray-400 opacity-75 text-black placeholder:text-black p-1 py-1 mr-4 border-gray-400" />
+                </div>
+                <div class="bg-gray-400 bg-opacity-75 rounded-md p-1  w-fit h-fit mt-4 ">
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+            </div> -->
+            <div class="mt-2">
+                <div class="items-center rounded-2xl bg-gray-400 h-fit">
+                    <form action="" id="form" class="flex">
+                        <input type="text" placeholder="Search..."
+                            class="w-full bg-transparent outline-none placeholder-gray-500 placeholder:p-2 p-2"
+                            id="search">
+                            <button class=" p-2 rounded-r-2xl text-white bg-pink-800 hover:bg-pink-600" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+    </nav>
+    <main>
+
+        <section class="px-5 pt-6 pb-12 z-1" id="wholemoviesection">
+
+            <section class="popular-movies ">
+
+                <div class="movieoverview" id="1trending">
+                    <div class="rounded-3xl w-fit">
+                        <img src="/slider-banner.jpg" alt="Puss in Boots:The last wish" class="relative">
+                    </div>
+
+                    <div class="banner-content w-1/3 absolute bottom-4 pl-4">
+                        <div>
+                            <h1 class="heading text-white text-3xl font-bold tracking-wide">Puss in boots: The last Wish
+                            </h1>
+                            <p class="genre text-white font-semibold">"Animation, Action, Adventure" </p>
+                            <p class="year text-white ">2022</p>
+                            <p class="summary text-white font-normal py-3">Puss in Boots discovers that his passion for
+                                adventure has taken its toll when he learns that he has
+                                burnt through eight of his nine lives. Puss sets out on an epic journey to find the
+                                mythical Last Wish
+                                and restore his nine lives.</p>
+                        </div>
+                        <div class="hover: outline-white outlinesoli ">
+                            <a href="./detail.html"
+                                class="no-underline font-semibold flex items-center w-fit gap-3 p-4 rounded-md bg-red-600">
+                                <img src="/play_circle.png" alt="" width="24" height="24">
+                                <span class="text-white ">Watch Now</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- <div class="movieoverview">
+            <img src="/slider-banner.jpg" alt="Puss in Boots:The last wish">
+
+            <div class="banner-content absolute left-6 right-6 bottom-52 w-1/4">
+                <div>
+                    <h1 class="heading text-white text-3xl font-bold tracking-wide">Puss in boots: The last Wish</h1>
+                    <p class="genre text-white font-semibold">"Animation, Action, Adventure" </p>
+                    <p class="year text-white ">2022</p>
+                    <p class="summary text-white font-normal">Puss in Boots discovers that his passion for adventure has taken its toll when he learns that he has
+                        burnt through eight of his nine lives. Puss sets out on an epic journey to find the mythical Last Wish
+                        and restore his nine lives.</p>
+                </div>
+                <div>
+                    <a href="./detail.html" class="no-underline font-semibold flex items-center w-fit gap-3 p-4 rounded-md bg-red-600">
+                        <img src="/play_circle.png" alt="" width="24" height="24">
+                        <span class="text-white">Watch Now</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="movieoverview">
+            <img src="/slider-banner.jpg" alt="Puss in Boots:The last wish">
+
+            <div class="banner-content absolute left-6 right-6 bottom-52 w-1/4">
+                <div>
+                    <h1 class="heading text-white text-3xl font-bold tracking-wide">Puss in boots: The last Wish</h1>
+                    <p class="genre text-white font-semibold">"Animation, Action, Adventure" </p>
+                    <p class="year text-white ">2022</p>
+                    <p class="summary text-white font-normal">Puss in Boots discovers that his passion for adventure has taken its toll when he learns that he has
+                        burnt through eight of his nine lives. Puss sets out on an epic journey to find the mythical Last Wish
+                        and restore his nine lives.</p>
+                </div>
+                <div>
+                    <a href="./detail.html" class="no-underline font-semibold flex items-center w-fit gap-3 p-4 rounded-md bg-red-600">
+                        <img src="/play_circle.png" alt="" width="24" height="24">
+                        <span class="text-white">Watch Now</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="movieoverview">
+            <img src="/slider-banner.jpg" alt="Puss in Boots:The last wish">
+
+            <div class="banner-content absolute left-6 right-6 bottom-52 w-1/4">
+                <div>
+                    <h1 class="heading text-white text-3xl font-bold tracking-wide">Puss in boots: The last Wish</h1>
+                    <p class="genre text-white font-semibold">"Animation, Action, Adventure" </p>
+                    <p class="year text-white ">2022</p>
+                    <p class="summary text-white font-normal">Puss in Boots discovers that his passion for adventure has taken its toll when he learns that he has
+                        burnt through eight of his nine lives. Puss sets out on an epic journey to find the mythical Last Wish
+                        and restore his nine lives.</p>
+                </div>
+                <div>
+                    <a href="./detail.html" class="no-underline font-semibold flex items-center w-fit gap-3 p-4 rounded-md bg-red-600">
+                        <img src="/play_circle.png" alt="" width="24" height="24">
+                        <span class="text-white">Watch Now</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>   -->
+
+
+            </section>
+
+            <section class="trendingmovies">
+                <div>
+                    <h1 class="font-bold text-black text-4xl p-8">All trending movies</h1>
+                </div>
+
+                <div
+                    class="w-full overflow-x-auto whitespace-nowrap scrollbar-thin  scrollbar-thumb-slate-900 scrollbar-track-slate-400 scrollbar-rounded-xl">
+
+                    <div class="movielist flex gap-5 flex-nowrap" id="trendingcontainer">
+
+                        <div class="min-w-1/2 trendingmovie">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="" class="w-85">
+                            </div>
+                            <p class="text-white text-ellipsis text">Puss in boots</p>
+                        </div>
+
+                        <!-- <div class="min-w-1/2 trendingmovie">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2 trendingmovie">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2 trendingmovie">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2 trendingmovie">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+                        <div class="min-w-1/2 trendingmovie">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+                        <div class="min-w-1/2 trendingmovie">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+                        <div class="min-w-1/2 trendingmovie">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+                        <div class="min-w-1/2 trendingmovie">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+                        <div class="min-w-1/2 trendingmovie">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div> -->
+
+                        <!-- <div class="min-w-1/2">
+                        <div class="w-full rounded-2xl overflow-hidden">
+                            <img src="/slider-control.jpg" alt="">
+                        </div>
+                        <p class="text-white text-ellipsis">Puss in boots</p>
+                    </div>
+                    <div class="min-w-1/2">
+                        <div class="w-full rounded-2xl overflow-hidden">
+                            <img src="/slider-control.jpg" alt="">
+                        </div>
+                        <p class="text-white text-ellipsis">Puss in boots</p>
+                    </div>
+                    <div class="min-w-1/2">
+                        <div class="w-full rounded-2xl overflow-hidden">
+                            <img src="/slider-control.jpg" alt="">
+                        </div>
+                        <p class="text-white text-ellipsis">Puss in boots</p>
+                    </div>
+                    <div class="min-w-1/2">
+                        <div class="w-full rounded-2xl overflow-hidden">
+                            <img src="/slider-control.jpg" alt="">
+                        </div>
+                        <p class="text-white text-ellipsis">Puss in boots</p>
+                    </div>
+                    <div class="min-w-1/2">
+                        <div class="w-full rounded-2xl overflow-hidden">
+                            <img src="/slider-control.jpg" alt="">
+                        </div>
+                        <p class="text-white text-ellipsis">Puss in boots</p>
+                    </div>
+                    <div class="min-w-1/2">
+                        <div class="w-full rounded-2xl overflow-hidden">
+                            <img src="/slider-control.jpg" alt="">
+                        </div>
+                        <p class="text-white text-ellipsis">Puss in boots</p>
+                    </div> -->
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="actionmovies">
+                <div>
+                    <h1 class="font-bold text-black text-4xl p-8">Action movies</h1>
+                </div>
+
+                <div class="w-full overflow-x-auto whitespace-nowrap">
+
+
+                    <div class="movielist flex gap-5 flex-nowrap" id="28">
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+            <section class="animation">
+                <div>
+                    <h1 class="font-bold text-black text-4xl p-8">Animation</h1>
+                </div>
+
+                <div class="w-full overflow-x-auto whitespace-nowrap">
+
+
+                    <div class="movielist flex gap-4 flex-nowrap" id="16">
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis over ">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+            <section class="comedymovies">
+                <div>
+                    <h1 class="font-bold text-black text-4xl p-8">Comedy Movies</h1>
+                </div>
+
+                <div class="w-full overflow-x-auto whitespace-nowrap">
+
+
+                    <div class="movielist flex gap-4 flex-nowrap" id="35">
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis over ">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+            <section class="dramas">
+                <div>
+                    <h1 class="font-bold text-black text-4xl p-8">Drama</h1>
+                </div>
+
+                <div class="w-full overflow-x-auto whitespace-nowrap">
+
+
+                    <div class="movielist flex gap-4 flex-nowrap" id="18">
+
+                        <!-- <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div> -->
+
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+            <section class="fantasy">
+                <div>
+                    <h1 class="font-bold text-black text-4xl p-8">fantasy</h1>
+                </div>
+
+                <div class="w-full overflow-x-auto whitespace-nowrap">
+
+
+                    <div class="movielist flex gap-4 flex-nowrap" id="14">
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis over ">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+            <section class="horror">
+                <div>
+                    <h1 class="font-bold text-black text-4xl p-8">HORROR</h1>
+                </div>
+
+                <div class="w-full overflow-x-auto whitespace-nowrap">
+
+
+                    <div class="movielist flex gap-4 flex-nowrap" id="27">
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis over ">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+            <section class="kdrama">
+                <div>
+                    <h1 class="font-bold text-white text-4xl p-8">K-drama</h1>
+                </div>
+
+                <div class="w-full overflow-x-auto whitespace-nowrap">
+
+
+                    <div class="movielist flex gap-4 flex-nowrap" id="10762">
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis over ">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+                        <div class="min-w-1/2">
+                            <div class="w-full rounded-2xl overflow-hidden">
+                                <img src="/slider-control.jpg" alt="">
+                            </div>
+                            <p class="text-white text-ellipsis">Puss in boots</p>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+        </section>
+    </main>
+
+    <!-- <script>
+        //function to fetch the first trending movie
+
+        function fetchTrendingMovie() {
+            const apiKey = '3e06ebba910f62ff6a06a3976a508806'; // Replace with your TMDb API key
+            const url = `https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}`;
+
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    const trendingMovie = data.results[9];
+                    const trendingMovieContainer = document.getElementById('1trending');
+
+                    trendingMovieContainer.innerHTML = '';
+
+                    const releaseYear = new Date(trendingMovie.release_date).getFullYear();
+
+                    const movieElement = document.createElement('div');
+                    movieElement.innerHTML = ` <div class="rounded-3xl w-fit">
+                             <img src="https://image.tmdb.org/t/p/w500${trendingMovie.backdrop_path}" alt="${trendingMovie.title}" class="relative">
+                    </div>
+
+                    <div class="banner-content w-1/3 absolute bottom-4 pl-4">
+                        <div>
+                            <h1 class="heading text-white text-3xl font-bold tracking-wide">${trendingMovie.title}
+                            </h1>
+                            <p class="year text-white ">${releaseYear}</p>
+                            <p class="summary text-white font-normal py-3">${trendingMovie.overview}</p>
+                        </div>
+                        <div class="hover: outline-white outlinesoli ">
+                            <a href="./detail.html"
+                                class="no-underline font-semibold flex items-center w-fit gap-3 p-4 rounded-md bg-red-600">
+                                <img src="/play_circle.png" alt="" width="24" height="24">
+                                <span class="text-white">Watch Now</span>
+                            </a>
+                        </div>
+                    </div>`;
+
+                    trendingMovieContainer.appendChild(movieElement);
+                })
+                .catch(error => {
+                    console.log('Error:', error);
+                });
+        }
+
+        // Function to fetch movies from TMDb API
+        function fetchMovies() {
+            const apiKey = '3e06ebba910f62ff6a06a3976a508806'; // Replace with your TMDb API key
+            const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`;
+
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    const movies = data.results;
+                    const moviesContainer = document.getElementById('trendingcontainer');
+
+                    moviesContainer.innerHTML = '';
+
+                    movies.forEach(movie => {
+                        const movieElement = document.createElement('div');
+                        movieElement.innerHTML = `<div class="w-full rounded-2xl overflow-hidden w-85 h-auto transition duration-300 ease-out hover:-translate-y-1">
+                                <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}" class="h-full object-cover w-full ">
+                            </div>
+                            <p class="text-black text-ellipsis text-center text-base font-medium p-2">${movie.title}</p>`;
+
+                        moviesContainer.appendChild(movieElement);
+                    });
+                })
+                .catch(error => {
+                    console.log('Error:', error);
+                });
+        }
+
+
+        // function fetchGenre(genreId) {
+        //     const apiKey = '3e06ebba910f62ff6a06a3976a508806'; // Replace with your TMDb API key
+        //     const url = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=${genreId}`;
+
+        //     fetch(url)
+        //         .then(response => response.json())
+        //         .then(data => {
+        //             const movies = data.results;
+        //             const moviesContainer = document.getElementById(genreId);
+
+        //             moviesContainer.innerHTML = '';
+
+        //             movies.forEach(movie => {
+        //                 const movieElement = document.createElement('div');
+        //                 movieElement.innerHTML = `<div class="w-full rounded-2xl overflow-hidden w-85 h-auto">
+        //                         <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}" class="h-full object-cover w-full">
+        //                     </div>
+        //                     <p class="text-white text-ellipsis text-center text-base font-medium p-2 overflow-hidden w-85">${movie.title}</p>`;
+
+        //                 moviesContainer.appendChild(movieElement);
+        //             });
+        //         })
+        //         .catch(error => {
+        //             console.log('Error:', error);
+        //         });
+
+
+        // }
+
+        function fetchGenres(...genreIds) {
+            const apiKey = '3e06ebba910f62ff6a06a3976a508806'; // Replace with your TMDb API key
+
+            genreIds.forEach(genreId => {
+                const url = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=${genreId}`;
+
+                fetch(url)
+                    .then(response => response.json())
+                    .then(data => {
+                        const movies = data.results;
+                        const moviesContainer = document.getElementById(genreId);
+
+                        moviesContainer.innerHTML = '';
+
+                        movies.forEach(movie => {
+                            const movieElement = document.createElement('div');
+                            movieElement.innerHTML = `<div class="w-full rounded-2xl overflow-hidden w-85 h-auto transition duration-300 ease-out hover:-translate-y-1">
+              <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}" class="h-full object-cover w-full">
+          </div>
+          <p class="text-white text-ellipsis text-center text-base font-medium p-2 overflow-hidden w-85">${movie.title}</p>`;
+
+                            movieElement.addEventListener('click', () => {
+                                // Handle movie click event
+                                redirectToMovieDetailsPage(movie.id);
+                            });
+
+                            moviesContainer.appendChild(movieElement);
+                        });
+                    })
+                    .catch(error => {
+                        console.log('Error:', error);
+                    });
+            });
+        }
+
+        // Example usage
+        
+
+
+        // function fetchGenre(...genreIds) {
+        //     const apiKey = '3e06ebba910f62ff6a06a3976a508806'; // Replace with your TMDb API key
+        //     const url = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=${genreId}`;
+
+        //     genreIds.forEach((genreId) => {
+
+
+
+        //     fetch(url)
+        //         .then(response => response.json())
+        //         .then(data => {
+        //             const movies = data.results;
+        //             const moviesContainer = document.getElementById(genreId);
+
+        //             moviesContainer.innerHTML = '';
+
+        //             movies.forEach(movie => {
+        //                 const movieElement = document.createElement('div');
+        //                 movieElement.innerHTML = `<div class="w-full rounded-2xl overflow-hidden w-85 h-auto">
+        //                         <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}" class="h-full object-cover w-full">
+        //                     </div>
+        //                     <p class="text-white text-ellipsis text-center text-base font-medium p-2 overflow-hidden w-85">${movie.title}</p>`;
+
+        //                 moviesContainer.appendChild(movieElement);
+        //             });
+        //         })
+        //         .catch(error => {
+        //             console.log('Error:', error);
+        //         });
+
+        //         });
+
+
+        // }
+
+        // Call the function to fetch and display movies
+        fetchMovies();
+        fetchTrendingMovie();
+        fetchGenres(27, 16, 10762, 14, 18, 28, 35);
+
+    </script> -->
+    <script src="/js/global.js" type="module"></script>
+</body>
+
+</html>

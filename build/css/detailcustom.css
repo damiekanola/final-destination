@@ -1,0 +1,29 @@
+.object{
+    width:100%;
+    object-fit: cover;
+    height: 90%;
+}
+
+.searchmovies{
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+
+@media screen and (max-width:971px){
+    .detailimagecontainer{
+        width: 700px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .imagecont{
+        width:175px;
+    }
+
+    /* .similarcont{
+        width: 150px;
+    } */
+
+}
